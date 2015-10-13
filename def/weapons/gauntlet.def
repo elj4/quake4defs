@@ -63,7 +63,7 @@ entityDef weapon_gauntlet
 	"spawnclass"				"idItem"
 	"weaponclass"				"rvWeaponGauntlet"
 	"weaponname"				"Gauntlet"
-	"size"						"32 32 32"  //checking out what size change does from 32 to 128
+	"size"						"32 32 32"
 
   	"model_view"				"weapon_gauntlet_view"
   	"model_view_strogg"			"weapon_gauntlet_view_strogg"
@@ -140,7 +140,7 @@ entityDef weapon_gauntlet
 	"fx_impact"					"effects/weapons/gauntlet/impact.fx"
 	"fx_impact_flesh"			"effects/weapons/gauntlet/impact_flesh.fx"
 	"fx_impact_monstermetal"	"effects/weapons/gauntlet/impact_monstermetal.fx"
-	"range"						"48" // changing the range from 48 to 48 thou
+	"range"						"48"
 	"fireRate"					".4"
 
 	"has_windup"				"1"
@@ -156,7 +156,7 @@ entityDef weapon_gauntlet_mp
 	"muzzle_kick_offset"		"0 0 0"
 	"recoilTime"			"0"
 	"recoilAngles"			"0 0 0"
-	"range"						"50" //changed from 50 to 48000
+	"range"						"50"
 }
 
 //--------------------------------------------------------------------------------------------------------------------
@@ -195,7 +195,7 @@ model weapon_gauntlet_world
 
 entityDef damage_gauntlet
 {
-	"damage"					"50" // from 50 to 500
+	"damage"					"50"
 	"gib"						"1"
 
 	"dv_time"					"100"

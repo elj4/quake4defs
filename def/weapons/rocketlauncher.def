@@ -70,13 +70,13 @@ entityDef weapon_rocketlauncher
 	"joint_world_flash"			"muzzle_flash"
 
 	"inv_weapon"				"weapon_rocketlauncher"
-	"inv_start_ammo_rocketlauncher"	"10"
+	"inv_start_ammo_rocketlauncher"	"38"
 	"inv_item"					"1"
 	"inv_icon"					"gfx/guis/hud/icons/item_rocket.tga"
 	"inv_name"					"#str_107409"	
 
 	"fireRate"					".8"
-	"reloadRate"				".8"
+	"reloadRate"				"2.0"
 	"spread"					"0"
 
 	"ammoRegenStep"				"1"
@@ -339,7 +339,7 @@ entityDef projectile_rocket
 	"detonate_on_death"			"0"
 	"detonate_on_world"			"1"
 	"detonate_on_actor"			"1"
-	"detonate_on_bounce"		"1"
+	"detonate_on_bounce"		"0"
 								
 	"impact_gib"				"1"								
 	"decal_size"				"75"

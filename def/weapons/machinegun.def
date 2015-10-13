@@ -214,7 +214,7 @@ entityDef weapon_machinegun_mp
 	"respawn_Team DM"			"30"
 	"respawn_Tourney"			"15"
 	
-	"inv_start_ammo_machinegun"		"200"
+	"inv_start_ammo_machinegun"		"100"
 	
 	// played when you touch a weapon you can't acquire, i.e. weaponStay in MP
 	"snd_noAcquire"			"pickup_weaponstay"	
