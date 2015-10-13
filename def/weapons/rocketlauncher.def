@@ -70,13 +70,13 @@ entityDef weapon_rocketlauncher
 	"joint_world_flash"			"muzzle_flash"
 
 	"inv_weapon"				"weapon_rocketlauncher"
-	"inv_start_ammo_rocketlauncher"	"38"
+	"inv_start_ammo_rocketlauncher"	"38" //originally 10
 	"inv_item"					"1"
 	"inv_icon"					"gfx/guis/hud/icons/item_rocket.tga"
 	"inv_name"					"#str_107409"	
 
-	"fireRate"					".8"
-	"reloadRate"				"2.0"
+	"fireRate"					".2" //originally .8 had changed to .2 before.
+	"reloadRate"				"3.0" // originally .8 changed to slower rate
 	"spread"					"0"
 
 	"ammoRegenStep"				"1"
@@ -85,7 +85,7 @@ entityDef weapon_rocketlauncher
 	"weaponname"				"Rocket Launcher"
 	"def_projectile"			"projectile_rocket"
 	"ammoType"					"ammo_rocketlauncher"
-	"clipSize"					"1"
+	"clipSize"					"20"
 	"ammoRequired"				"1"
 	"gui"						"guis/weapons/rocketlauncher_ammo.gui"
 	"mtr_icon"					"gfx/guis/hud/icons/gun_rocketlauncher"
@@ -100,7 +100,7 @@ entityDef weapon_rocketlauncher
 	
 	"mtr_flashShader"			"lights/muzzleflash"
 	"flashColor"				"0.99 0.84 .31"
-	"flashRadius"				"200"
+	"flashRadius"				"20000" //originally 200 changing it to see effects.
 	"flashPointLight"			"1"
 	"flashTime"					".1"
 	"flashViewOffset"			"15 -5 -5"
@@ -331,13 +331,13 @@ entityDef projectile_rocket
 	"def_splash_damage"			"damage_rocketSplash"
 																											
 	"speed"						"900"
-	"fuse"						"6"
+	"fuse"						"2.5"
 	"push"						"48000"
 	
 							
 	"detonate_on_fuse"			"1"
 	"detonate_on_death"			"0"
-	"detonate_on_world"			"1"
+	"detonate_on_world"			"0" //originally 1 checking what 0 does
 	"detonate_on_actor"			"1"
 	"detonate_on_bounce"		"0"
 								
