@@ -70,13 +70,13 @@ entityDef weapon_rocketlauncher
 	"joint_world_flash"			"muzzle_flash"
 
 	"inv_weapon"				"weapon_rocketlauncher"
-	"inv_start_ammo_rocketlauncher"	"38" //originally 10
+	"inv_start_ammo_rocketlauncher"	"40" //originally 10
 	"inv_item"					"1"
 	"inv_icon"					"gfx/guis/hud/icons/item_rocket.tga"
 	"inv_name"					"#str_107409"	
 
 	"fireRate"					".2" //originally .8 had changed to .2 before.
-	"reloadRate"				"3.0" // originally .8 changed to slower rate
+	"reloadRate"				"0.9" // originally .8 changed to slower rate
 	"spread"					"0"
 
 	"ammoRegenStep"				"1"
