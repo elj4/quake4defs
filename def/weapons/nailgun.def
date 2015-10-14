@@ -106,14 +106,14 @@ entityDef weapon_nailgun
 
 	"joint_world_flash"			"nailgun_rotating_drum"
 
-	"fireRate"					".16"
-	"spread"					"3"
+	"fireRate"					".3"
+	"spread"					"1"
 	"spread_mp"					"0"
 	"spreadSeek"				"5"
 	"drumSpeed"					".8"
 	
 	"inv_weapon"				"weapon_nailgun"
-	"inv_start_ammo_nailgun"			"50"
+	"inv_start_ammo_nailgun"			"20"
 	"inv_item"					"1"
 	"inv_icon"					"gfx/guis/hud/icons/item_nailgun"
 	"inv_name"					"#str_107407"
@@ -188,7 +188,7 @@ entityDef weapon_nailgun
 entityDef weapon_nailgun_mp
 {
 	"inherit"				"weapon_nailgun"
-	"clipsize"				"0"
+	"clipsize"				"10"
 	"def_mod3"				""
 	"hidesurface"				"models/weapons/nailgun_mod_ammo"
 	"editor_ignore"				"1"
@@ -481,7 +481,7 @@ entityDef projectile_nail_seek
 
 entityDef damage_nailDirect 
 {
-	"damage"					"25"
+	"damage"					"20"
 //	"push"						"1000"
 	"gib"						"0"
 
@@ -494,7 +494,7 @@ entityDef damage_nailDirect
 
 entityDef damage_nailSplash 
 {
-	"damage"					"25"
+	"damage"					"15"
 	"radius"					"50"
 	"knockback"					"5"
 	"push"						"0"
@@ -508,14 +508,14 @@ entityDef damage_nailSplash
 entityDef damage_nailDirect_mp
 {
 	"inherit"				"damage_nailDirect"
-	"damage"				"25"
+	"damage"				"20"
 	"knockback"				"30"
 }
 
 entityDef damage_nailSplash_mp
 {
-	"damage"					"25"
-	"radius"					"75"
+	"damage"					"10"
+	"radius"					"55"
 	"knockback"					"30"
 	"push"						"0"
 	"gib"						"0"

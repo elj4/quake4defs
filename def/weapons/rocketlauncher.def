@@ -76,7 +76,7 @@ entityDef weapon_rocketlauncher
 	"inv_name"					"#str_107409"	
 
 	"fireRate"					".1" //originally .8 had changed to .2 before.
-	"reloadRate"				"0.8" // originally .8 changed to slower rate
+	"reloadRate"				"0.1" // originally .8 changed to slower rate
 	"spread"					"0"
 
 	"ammoRegenStep"				"1"
@@ -186,7 +186,7 @@ model weapon_rocketlauncher_view
 	anim idle 					models/weapons/rocketlauncher/idle.md5anim	
 	anim fire 					models/weapons/rocketlauncher/fire.md5anim	
 	{
-		rate .25
+		rate .25 //originall .25
 		
 		frame 1					sound_weapon	player_rocketlauncher_fire
 		frame 1					sound_item		player_rocketlauncher_fire_stereo
@@ -331,7 +331,7 @@ entityDef projectile_rocket
 	"def_splash_damage"			"damage_rocketSplash"
 																											
 	"speed"						"900"
-	"fuse"						"2.5"
+	"fuse"						"1.5" //originally 6
 	"push"						"48000"
 	
 							
@@ -370,7 +370,7 @@ entityDef projectile_rocket_mp
 	"inherit"					"projectile_rocket"
 	"predictTime"				"50"
 	"speed"						"935"
-	"size"						"5 5 5"
+	"size"						"5 5 5" //was 5
 	"no_impact_prediction"		"1"
 }
 

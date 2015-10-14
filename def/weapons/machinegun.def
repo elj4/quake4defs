@@ -87,13 +87,13 @@ entityDef weapon_machinegun
 	"joint_world_flash"			"muzzle_flash"
 
 	"inv_weapon"				"weapon_machinegun"
-	"inv_start_ammo_machinegun"		"40"
+	"inv_start_ammo_machinegun"		"5"
 	"inv_item"					"1"
 	"inv_icon"					"gfx/guis/hud/icons/item_machinegun.tga"
 	"inv_name"					"#str_107406"
 
-	"fireRate"					".1"
-	"spread"					"2"
+	"fireRate"					".9"
+	"spread"					"1"
 
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_machinegun"
 	"def_hitscan"				"hitscan_bullet"
@@ -101,8 +101,8 @@ entityDef weapon_machinegun
 	
 	"ammoType"					"ammo_machinegun"
 	"ammoRequired"				"1"
-	"clipSize"					"40"
-	"lowAmmo"					"10"
+	"clipSize"					"1"
+	"lowAmmo"					"1"
 	"gui"						"guis/weapons/machinegun_ammo.gui"
 	"gui2"						"guis/weapons/machinegun_inview_scope.gui"
 
@@ -139,7 +139,7 @@ entityDef weapon_machinegun
 	
 	"mtr_flashlightShader"		"gfx/lights/flashlight"
 	"flashlightColor"			"1 1 .9"
-	"flashlightRadius"			"400"
+	"flashlightRadius"			"4000"
 	"flashlightAngle"			"15.0"
 	"flashlightTarget"			"900 0 0"
 	"flashlightUp"				"0 340 0"
@@ -173,7 +173,7 @@ entityDef weapon_machinegun
 
 	// Scope / Zoom
 	"spreadzoom"				"0"
-	"zoomFov"					"50"
+	"zoomFov"					"35"
 	"zoomTime"					".1"
 	"zoomHideCrosshair"			"0"
 	"gui_zoom"					"guis/weapons/machinegun_scope.gui"
@@ -186,7 +186,7 @@ entityDef weapon_machinegun
 entityDef weapon_machinegun_mp
 {
 	"inherit"				"weapon_machinegun"
-	"clipsize"				"0"
+	"clipsize"				"1"
   	"def_mod1"				""
   	"inv_icon"				"gfx/guis/hud/icons/item_machinegun_colored"
   	"mtr_simple_icon"		"simpleicons/item_machinegun_colored"
@@ -195,8 +195,8 @@ entityDef weapon_machinegun_mp
   	
   	// use q3 style spread in MP
   	"machinegunSpreadStyle"			"1"
-  	"spread"				"200"
-  	"spreadZoom"				"150"
+  	"spread"				"3"
+  	"spreadZoom"				"1"
   	"editor_ignore"				"1"
   	
 	"hidesurface"				"models/weapons/machinegun/clip_large"
@@ -209,12 +209,12 @@ entityDef weapon_machinegun_mp
 	"recoilAngles"				"0 0 0"
 	"def_hitscan"				"hitscan_bullet_mp"
 	"def_althitscan"			"hitscan_zoomed_bullet_mp"
-	"altFireRate"				".2"
+	"altFireRate"				".5"
 	
 	"respawn_Team DM"			"30"
 	"respawn_Tourney"			"15"
 	
-	"inv_start_ammo_machinegun"		"100"
+	"inv_start_ammo_machinegun"		"8"
 	
 	// played when you touch a weapon you can't acquire, i.e. weaponStay in MP
 	"snd_noAcquire"			"pickup_weaponstay"	
@@ -380,8 +380,8 @@ entityDef hitscan_zoomed_bullet
 entityDef damage_machinegun
 {
 	"inherit"					"damage_bullet"
-	"damage"					"15"
-	"damage_flesh"				"18"
+	"damage"					"70"
+	"damage_flesh"				"40"
 
 	"deathPush"					"100"
 	"deathPushMin"				"3000 350"
@@ -391,7 +391,7 @@ entityDef damage_machinegun
 entityDef damage_machinegun_flesh
 {
 	"inherit"					"damage_machinegun"
-	"damage"					"18"
+	"damage"					"40"
 }
 
 //---------------------------------------------------------------
@@ -400,14 +400,14 @@ entityDef damage_machinegun_flesh
 entityDef damage_machinegun_zoom
 {
 	"inherit"					"damage_machinegun"
-	"damage"					"20"
-	"damage_flesh"				"24"
+	"damage"					"100"
+	"damage_flesh"				"60"
 }
 
 entityDef damage_machinegun_zoom_flesh
 {
 	"inherit"					"damage_machinegun"
-	"damage"					"24"
+	"damage"					"60"
 }
 
 //---------------------------------------------------------------
@@ -425,7 +425,7 @@ entityDef hitscan_bullet_mp
 entityDef hitscan_zoomed_bullet_mp
 {
 	"inherit"				"hitscan_bullet"
-	"range"					"40000"
+	"range"					"400000"
 	
 	"def_damage"				"damage_machinegun_zoom_mp"
 	"def_damage_flesh"			"damage_machinegun_zoom_mp"
@@ -434,8 +434,8 @@ entityDef hitscan_zoomed_bullet_mp
 entityDef damage_machinegun_mp
 {
 	"inherit"					"damage_bullet"
-	"damage"					"7"
-	"damage_flesh"					"7"
+	"damage"					"75"
+	"damage_flesh"					"45"
 	"damage_team"					"5"
 	"knockback"					"7"
 	"knockback_team"				"5"
@@ -449,8 +449,8 @@ entityDef damage_machinegun_mp
 entityDef damage_machinegun_zoom_mp
 {
 	"inherit"					"damage_machinegun_mp"
-	"damage"					"10"
-	"damage_flesh"					"10"
+	"damage"					"95"
+	"damage_flesh"					"70"
 	"damage_team"					"7"
 	"knockback"					"10"
 	"knockback_team"				"10"
