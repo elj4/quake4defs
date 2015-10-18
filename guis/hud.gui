@@ -150,7 +150,7 @@ windowDef Desktop
 		{
 			if ( "gui::player_healthpct" < 0.26 )
 			{
-				set "health_valbar::matcolor" "1,0.3,0,0.35" ;
+				set "health_valbar::matcolor" "255,0.3,0,0.35" ;
 				set "health_val::matcolor" "1,0.3,0,0.5" ;
 				set "health_ekg::matcolor" "0.3,0.05,0,1" ;
 				set "health_backbar_add::visible" "1" ;
