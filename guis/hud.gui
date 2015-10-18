@@ -155,7 +155,7 @@ windowDef Desktop
 				set "health_ekg::matcolor" "0.3,0.05,0,1" ;
 				set "health_backbar_add::visible" "1" ;
 			} else	{
-				set "health_valbar::matcolor" "0.698,0.811,0.427,0.2" ;
+				set "health_valbar::matcolor" "0.698,0.811,0.427,427" ;//used to be 0.2
 				set "health_val::matcolor" "0.698,0.811,0.427,0.35" ;
 				set "health_ekg::matcolor" "0.0862,0.105,0.0549,1" ;
 				set "health_backbar_add::visible" "0" ;
@@ -707,7 +707,7 @@ windowDef Desktop
 		visible	("gui::mp" == 0 )
 		windowDef health_backbar
 		{
-			rect	190,420,125,59
+			rect	190,420,125,423 //59 was
 			visible	1
 			background	"gfx/guis/hud/backbar"
 			matcolor	0,0,0,0.5
@@ -1019,7 +1019,7 @@ windowDef Desktop
 // MP armor
 //-----------------------		
 	
-	windowDef p_armor_mp
+	/*windowDef p_armor_mp
 	{
 		rect	0,0,640,480
 		visible	("gui::player_armor" > 0 && "gui::mp" == 1 )
@@ -1092,7 +1092,7 @@ windowDef Desktop
 			matcolor	0.980,0.168,0.0196,0.8
 		}
 	}
-	
+	*/
 //-----------------------		
 // weapon switching
 //-----------------------	

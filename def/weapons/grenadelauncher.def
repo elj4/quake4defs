@@ -81,7 +81,7 @@ entityDef weapon_grenadelauncher
 	"dirOffset"					"0 0 .2"
 	
 	"inv_weapon"				"weapon_grenadelauncher"
-	"inv_start_ammo_grenadelauncher"	"10"
+	"inv_start_ammo_grenadelauncher"	"5"
 	"inv_item"					"1"
 	"inv_icon"					"gfx/guis/hud/icons/item_grenade.tga"
 	"inv_name"					"#str_107403"	
@@ -89,7 +89,7 @@ entityDef weapon_grenadelauncher
 	"weaponname"				"Grenade Launcher"
 	"def_projectile"			"projectile_grenade"
 	"ammoType"					"ammo_grenadelauncher"
-	"clipSize"					"8"
+	"clipSize"					"3"
 	"ammoRequired"				"1"
 	"mtr_icon"					"gfx/guis/hud/icons/gun_grenadelauncher"
 
@@ -153,7 +153,7 @@ entityDef weapon_grenadelauncher_mp
 	"recoilTime"				"0"
 	"recoilAngles"				"0 0 0"
 
-	"respawn_Team DM"			"30"
+	"respawn_Team DM"			"60"
 	"respawn_Tourney"			"15"
 
 	// played when you touch a weapon you can't acquire, i.e. weaponStay in MP
@@ -234,7 +234,7 @@ entityDef projectile_grenade
 	"spawnclass"				"idProjectile"
 	"mins"						"-4 -4 -4"
 	"maxs"						"4 4 4"
-	"cone"						""
+	"cone"						"3"//was empty
 	"noshadows"					"1"
 	"clipmask_largeshot"		"1"
 	
@@ -296,7 +296,7 @@ entityDef projectile_grenade
 
 entityDef damage_grenadeDirect 
 {
-	"damage"					"125"
+	"damage"					"85"
 	"gib"						"1"
 
 	"deathPush"					"200"
@@ -311,7 +311,7 @@ entityDef damage_grenadeDirect
 entityDef damage_grenadeDirect_mp
 {
 	"inherit"					"damage_grenadeDirect"
-	"damage"					"100"
+	"damage"					"85"
 	"knockback"					"100"
 }
 
